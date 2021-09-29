@@ -1,0 +1,15 @@
+{
+  "name": "express-portfolio-site",
+  "version": "1.0.0",
+  "description": "Express Portfolio for COMP226",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Wheeler - 301167760",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
