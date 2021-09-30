@@ -5,7 +5,7 @@ var app = express();
 app.set('view engine', 'ejs');
 
 //set public folder as static
-app.use(express.static("public"));
+app.use(Express.static(__dirname+'/public'));
 
 // use res.render to load up an ejs view file
 
