@@ -1,17 +1,13 @@
 var express = require('express');
 var app = express();
-
-const bodyParser = require('body-parser')
-app.use(bodyParser.urlencoded({extended: true}))
-
-const nodemailer = require('nodemailer')
+var root = require('path').join(__dirname,'/public');
 
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
 //set public folder as static
-app.use(express.static("public"));
+app.use(express.static(root));
 
 // use res.render to load up an ejs view file
 
@@ -39,10 +35,6 @@ app.get('/services', function(req, res) {
 app.get('/contact', function(req, res) {
     res.render('pages/contact');
   });
-
-  // POST route from contact form
-app.post('/contact', (req, res) => {
-  })
 
 app.listen(3000);
 console.log('Server is listening on port 3000');
